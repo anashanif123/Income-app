@@ -1,0 +1,86 @@
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Finance app</title>
+  <style>
+  @font-face {
+    font-family:regular ;
+    src: url(Freeman-Regular.ttf);
+  }
+    body {
+        background-image: url(depositphotos_201554746-stock-photo-double-exposure-image-stock-market.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+    font-family:regular ;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1,h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    input{
+      margin-left: 150px;  
+
+        display: block;
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+     button {
+      margin-left: 150px;  
+      display: block;
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+  <h1>Simple Finance  App</h1>
+  <input type="number" id="income" placeholder="Input your income">
+  <input type="number" id="expense" placeholder="Input your expense">
+  <h1 id="mess"></h1>
+  <button id="check-btn">Check</button>
+  <h3>your expanse & income history:</h3>
+  <ul id="list"></ul>
+</div>
+  <script src="./app.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video">
+    <video autoplay muted loop id="bg-video">
+        <source src="video/videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="main">
+    <div class="container">
+        <h1>Finance App</h1>
+        <div class="input-section">
+            <label for="income">Income:</label>
+            <input type="number" id="income" placeholder="Enter income">
+        </div>
+        <div class="input-section">
+            <label for="expense">Expense:</label>
+            <input type="number" id="expense" placeholder="Enter expense">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="resetFields()">Reset</button>
+        <div id="display"></div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
